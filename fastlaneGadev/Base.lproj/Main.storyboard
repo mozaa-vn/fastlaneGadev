@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fastlaneGadev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIq-B3-7rM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="x1S-2T-NO9">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="711"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gà Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rJ-TG-hCY">
+                                                <rect key="frame" x="12.5" y="0.0" width="310" height="41"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" red="0.77294832468032837" green="0.50222104787826538" blue="0.089932836592197418" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdC-jD-GI7">
+                                                <rect key="frame" x="12.5" y="55" width="310" height="214"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="310" id="lKf-kF-Jy6"/>
+                                                </constraints>
+                                                <mutableString key="text">Nếu bạn đang lên thực đơn cho bữa cơm trưa nay thì hãy tham khảo qua 3 cách làm thịt gà kho gừng, gừng sả, gừng nghệ đơn giản dưới đây. Với món kho này, các bước chế biến khá đơn giản nhưng đây lại là món ngon cực hợp cho bữa cơm gia đình. Tin chắc rằng, bạn sẽ bị món ăn này hấp dẫn ngay từ những miếng gà đầu tiên.</mutableString>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="web_logo" translatesAutoresizingMaskIntoConstraints="NO" id="J95-7F-lxi">
+                                                <rect key="frame" x="0.0" y="283" width="335" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="VN1-ps-24U"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7c-sK-eb3">
+                                                <rect key="frame" x="12.5" y="497" width="310" height="214"/>
+                                                <string key="text">Nguyên liệu gà kho gừng 
+Gà: 500 – 600 gr hoặc ½ con (loại gà ngon nhất để kho là gà kiến hoặc gà tam hoàng)
+Gừng: 50 gr
+Hành tím, tỏi: 2 củ
+Hành lá
+Gia vị: dầu ăn, đường, nước mắm, bột ngọt, tiêu, muối.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YdC-jD-GI7" firstAttribute="width" secondItem="W7c-sK-eb3" secondAttribute="width" id="Ej5-68-vrh"/>
+                                            <constraint firstItem="8rJ-TG-hCY" firstAttribute="leading" secondItem="YdC-jD-GI7" secondAttribute="leading" id="QEw-B2-87a"/>
+                                            <constraint firstItem="J95-7F-lxi" firstAttribute="centerX" secondItem="x1S-2T-NO9" secondAttribute="centerX" id="mpO-WN-mqd"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x1S-2T-NO9" firstAttribute="top" secondItem="KIq-B3-7rM" secondAttribute="top" id="7sv-nN-jyc"/>
+                                    <constraint firstAttribute="trailing" secondItem="x1S-2T-NO9" secondAttribute="trailing" constant="20" id="MaF-KU-RAI"/>
+                                    <constraint firstItem="x1S-2T-NO9" firstAttribute="leading" secondItem="KIq-B3-7rM" secondAttribute="leading" constant="20" id="Yx7-Rz-J6H"/>
+                                    <constraint firstItem="x1S-2T-NO9" firstAttribute="width" secondItem="KIq-B3-7rM" secondAttribute="width" constant="-40" id="a0X-4q-0aW"/>
+                                    <constraint firstAttribute="bottom" secondItem="x1S-2T-NO9" secondAttribute="bottom" id="eCo-bd-CBb"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHS-Qc-sne">
+                                <rect key="frame" x="83.5" y="622" width="208" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qGH-PN-Vzx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Làm sao để ăn gà ngon hơn?"/>
+                                <connections>
+                                    <segue destination="nsc-tx-xr3" kind="presentation" id="dhh-CT-JsK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KIq-B3-7rM" secondAttribute="bottom" constant="60" id="2ox-c9-dDX"/>
+                            <constraint firstItem="KIq-B3-7rM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7b5-gu-NfZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IHS-Qc-sne" secondAttribute="bottom" constant="15" id="Eg1-E5-Ona"/>
+                            <constraint firstItem="IHS-Qc-sne" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gov-Ra-vU9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KIq-B3-7rM" secondAttribute="trailing" id="ckw-PA-ZjZ"/>
+                            <constraint firstItem="KIq-B3-7rM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gdY-05-lZo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="110"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pm1-JE-Da3">
+            <objects>
+                <viewController id="nsc-tx-xr3" customClass="ViewController" customModule="fastlaneGadev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ff9-OM-Whh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VF-h8-ol2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-A8-CUK">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="1151"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gà Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cci-80-VOO">
+                                                <rect key="frame" x="12.5" y="0.0" width="310" height="41"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <color key="textColor" red="0.77294832468032837" green="0.50222104787826538" blue="0.089932836592197418" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Thực hiện gà kho gừng" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-Sf-rMJ">
+                                                <rect key="frame" x="12.5" y="55" width="310" height="38"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="310" id="KcU-Cf-JSQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="web_logo" translatesAutoresizingMaskIntoConstraints="NO" id="OG8-cG-3Ji">
+                                                <rect key="frame" x="0.0" y="107" width="335" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="P1z-wq-hDW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCT-8I-VVK">
+                                                <rect key="frame" x="12.5" y="321" width="310" height="830"/>
+                                                <mutableString key="text">Gà sau khi mua về thì rửa sạch, rửa qua với nước muối để khử mùi hôi, sau đó xả lại với nước sạch, để ráo. Bạn có thể trụng sơ gà qua với nước sôi, vớt ra chặt thành những miếng vừa ăn. Lưu ý khi mua gà nên chọn gà ta có trọng lượng khoảng 1,4kg đến 1,6 kg để khi chín thịt gà dai và giòn hơn.
+
+Ướp thịt gà với 1 muỗng canh nước mắm, 1 muỗng canh bột ngọt, 1 muỗng café tiêu, 1  muỗng canh đường và chút xíu dầu ăn, hành đập dập, trộn đều và để yên gà trong 30 – 45 phút cho thấm gia vị.
+
+Gừng để nguyên vỏ, rửa thật kỹ dưới nước cho sạch bùn đất, thái sợi mỏng.
+
+Bắc chảo lên bếp, cho dầu ăn vào làm nóng, dầu sôi thì cho hành tím, tỏi băm vào phi lên cho thơm, cho tiếp phần gừng vào (lúc này bạn nên để lửa hơi to),
+
+Cho gà vào đảo đều tay, nêm nếm gia vị sao cho vừa ăn với khẩu vị của bạn. Cho tiếp vào ½ bát nước, đậy nấp trong 5 phút. Khi thịt gà bắt đầu săn lại, chuyển màu thì bạn hạ lửa liu riu, cho tiếp gừng vào đảo đều tay trong khoảng 2 – 4 phút. Đến khi thịt gà chín hoàn là bạn có thể cho phần hành lá cắt nhỏ vào, đảo nhẹ rồi tắt bếp.
+
+Cho gà ra dĩa, chan phần nước kho lên và rắc chút tiêu xay là hoàn tất món ăn.</mutableString>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ZIp-Sf-rMJ" firstAttribute="width" secondItem="bCT-8I-VVK" secondAttribute="width" id="bSt-hC-KEJ"/>
+                                            <constraint firstItem="cci-80-VOO" firstAttribute="leading" secondItem="ZIp-Sf-rMJ" secondAttribute="leading" id="fOO-6I-s8g"/>
+                                            <constraint firstItem="OG8-cG-3Ji" firstAttribute="centerX" secondItem="sbY-A8-CUK" secondAttribute="centerX" id="omB-JO-AgL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sbY-A8-CUK" firstAttribute="leading" secondItem="4VF-h8-ol2" secondAttribute="leading" constant="20" id="5NA-Qa-DgN"/>
+                                    <constraint firstAttribute="trailing" secondItem="sbY-A8-CUK" secondAttribute="trailing" constant="20" id="Js7-qJ-SsJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sbY-A8-CUK" secondAttribute="bottom" id="lcg-ei-8eH"/>
+                                    <constraint firstItem="sbY-A8-CUK" firstAttribute="width" secondItem="4VF-h8-ol2" secondAttribute="width" constant="-40" id="mmA-AI-Jlh"/>
+                                    <constraint firstItem="sbY-A8-CUK" firstAttribute="top" secondItem="4VF-h8-ol2" secondAttribute="top" id="v0Y-t2-acV"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nấu gà đúng cách" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtR-ny-Q8o">
+                                <rect key="frame" x="114" y="603" width="147" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CV3-Bz-Yjn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OTV-Ha-c9u" firstAttribute="bottom" secondItem="4VF-h8-ol2" secondAttribute="bottom" constant="60" id="5Cj-eq-sK9"/>
+                            <constraint firstItem="YtR-ny-Q8o" firstAttribute="centerX" secondItem="OTV-Ha-c9u" secondAttribute="centerX" id="iDt-1D-KaG"/>
+                            <constraint firstItem="OTV-Ha-c9u" firstAttribute="bottom" secondItem="YtR-ny-Q8o" secondAttribute="bottom" constant="14" id="jZw-RN-rPz"/>
+                            <constraint firstItem="OTV-Ha-c9u" firstAttribute="trailing" secondItem="4VF-h8-ol2" secondAttribute="trailing" id="s4e-gj-o7U"/>
+                            <constraint firstItem="4VF-h8-ol2" firstAttribute="top" secondItem="OTV-Ha-c9u" secondAttribute="top" id="zE4-rC-Nai"/>
+                            <constraint firstItem="4VF-h8-ol2" firstAttribute="leading" secondItem="OTV-Ha-c9u" secondAttribute="leading" id="zea-W4-Ry5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OTV-Ha-c9u"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cd9-lF-KSo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="web_logo" width="390" height="171"/>
+    </resources>
+</document>
