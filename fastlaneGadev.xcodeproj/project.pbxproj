@@ -15,6 +15,8 @@
 		A92F35A02514B33500E527E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92F359E2514B33500E527E7 /* LaunchScreen.storyboard */; };
 		A92F35AB2514B33500E527E7 /* fastlaneGadevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F35AA2514B33500E527E7 /* fastlaneGadevTests.swift */; };
 		A92F35B62514B33500E527E7 /* fastlaneGadevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F35B52514B33500E527E7 /* fastlaneGadevUITests.swift */; };
+		A960EA12251B09B700B4B1A1 /* fastlaneScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A960EA11251B09B700B4B1A1 /* fastlaneScreenshots.swift */; };
+		A960EA1A251B0BC100B4B1A1 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A960EA19251B0BC100B4B1A1 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,13 @@
 			remoteInfo = fastlaneGadev;
 		};
 		A92F35B22514B33500E527E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92F35882514B33500E527E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92F358F2514B33500E527E7;
+			remoteInfo = fastlaneGadev;
+		};
+		A960EA14251B09B700B4B1A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A92F35882514B33500E527E7 /* Project object */;
 			proxyType = 1;
@@ -49,6 +58,10 @@
 		A92F35B12514B33500E527E7 /* fastlaneGadevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fastlaneGadevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92F35B52514B33500E527E7 /* fastlaneGadevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlaneGadevUITests.swift; sourceTree = "<group>"; };
 		A92F35B72514B33600E527E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A960EA0F251B09B700B4B1A1 /* fastlaneScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fastlaneScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A960EA11251B09B700B4B1A1 /* fastlaneScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlaneScreenshots.swift; sourceTree = "<group>"; };
+		A960EA13251B09B700B4B1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A960EA19251B0BC100B4B1A1 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A960EA0C251B09B700B4B1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +102,7 @@
 				A92F35922514B33500E527E7 /* fastlaneGadev */,
 				A92F35A92514B33500E527E7 /* fastlaneGadevTests */,
 				A92F35B42514B33500E527E7 /* fastlaneGadevUITests */,
+				A960EA10251B09B700B4B1A1 /* fastlaneScreenshots */,
 				A92F35912514B33500E527E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +113,7 @@
 				A92F35902514B33500E527E7 /* fastlaneGadev.app */,
 				A92F35A62514B33500E527E7 /* fastlaneGadevTests.xctest */,
 				A92F35B12514B33500E527E7 /* fastlaneGadevUITests.xctest */,
+				A960EA0F251B09B700B4B1A1 /* fastlaneScreenshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +148,16 @@
 				A92F35B72514B33600E527E7 /* Info.plist */,
 			);
 			path = fastlaneGadevUITests;
+			sourceTree = "<group>";
+		};
+		A960EA10251B09B700B4B1A1 /* fastlaneScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+				A960EA19251B0BC100B4B1A1 /* SnapshotHelper.swift */,
+				A960EA11251B09B700B4B1A1 /* fastlaneScreenshots.swift */,
+				A960EA13251B09B700B4B1A1 /* Info.plist */,
+			);
+			path = fastlaneScreenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +216,24 @@
 			productReference = A92F35B12514B33500E527E7 /* fastlaneGadevUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A960EA0E251B09B700B4B1A1 /* fastlaneScreenshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A960EA18251B09B700B4B1A1 /* Build configuration list for PBXNativeTarget "fastlaneScreenshots" */;
+			buildPhases = (
+				A960EA0B251B09B700B4B1A1 /* Sources */,
+				A960EA0C251B09B700B4B1A1 /* Frameworks */,
+				A960EA0D251B09B700B4B1A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A960EA15251B09B700B4B1A1 /* PBXTargetDependency */,
+			);
+			name = fastlaneScreenshots;
+			productName = fastlaneScreenshots;
+			productReference = A960EA0F251B09B700B4B1A1 /* fastlaneScreenshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +255,10 @@
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = A92F358F2514B33500E527E7;
 					};
+					A960EA0E251B09B700B4B1A1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A92F358F2514B33500E527E7;
+					};
 				};
 			};
 			buildConfigurationList = A92F358B2514B33500E527E7 /* Build configuration list for PBXProject "fastlaneGadev" */;
@@ -223,6 +277,7 @@
 				A92F358F2514B33500E527E7 /* fastlaneGadev */,
 				A92F35A52514B33500E527E7 /* fastlaneGadevTests */,
 				A92F35B02514B33500E527E7 /* fastlaneGadevUITests */,
+				A960EA0E251B09B700B4B1A1 /* fastlaneScreenshots */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +301,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A92F35AF2514B33500E527E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A960EA0D251B09B700B4B1A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +343,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A960EA0B251B09B700B4B1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A960EA12251B09B700B4B1A1 /* fastlaneScreenshots.swift in Sources */,
+				A960EA1A251B0BC100B4B1A1 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +364,11 @@
 			isa = PBXTargetDependency;
 			target = A92F358F2514B33500E527E7 /* fastlaneGadev */;
 			targetProxy = A92F35B22514B33500E527E7 /* PBXContainerItemProxy */;
+		};
+		A960EA15251B09B700B4B1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92F358F2514B33500E527E7 /* fastlaneGadev */;
+			targetProxy = A960EA14251B09B700B4B1A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -550,6 +626,44 @@
 			};
 			name = Release;
 		};
+		A960EA16251B09B700B4B1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ET48FGDNJ8;
+				INFOPLIST_FILE = fastlaneScreenshots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mozaa.makelane.fastlaneScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fastlaneGadev;
+			};
+			name = Debug;
+		};
+		A960EA17251B09B700B4B1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ET48FGDNJ8;
+				INFOPLIST_FILE = fastlaneScreenshots/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mozaa.makelane.fastlaneScreenshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fastlaneGadev;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +699,15 @@
 			buildConfigurations = (
 				A92F35C12514B33600E527E7 /* Debug */,
 				A92F35C22514B33600E527E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A960EA18251B09B700B4B1A1 /* Build configuration list for PBXNativeTarget "fastlaneScreenshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A960EA16251B09B700B4B1A1 /* Debug */,
+				A960EA17251B09B700B4B1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
